@@ -12,12 +12,14 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity  {
 
+    // Variables privadas
+
     private EditText txt_num1, txt_num2;
     private Spinner spinner;
     private ImageButton imageButton;
     private TextView txt_res;
 
-    @Override
+    @Override //Clase On Create
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -28,7 +30,7 @@ public class MainActivity extends AppCompatActivity  {
         spinner = (Spinner) findViewById(R.id.spinner);
         imageButton = (ImageButton) findViewById(R.id.imageButton);
 
-
+        // Lista de las operaciones
         String[] operations =
                 {
                         "Sumar",
@@ -47,7 +49,11 @@ public class MainActivity extends AppCompatActivity  {
             }
         });
     }
-    
+
+    /*
+    Metodo para realizar los calculos respectivos de cada operación
+    Retorna un boolean para validar que los valores ingresados sean validos
+     */
 
     private boolean calcular(){
 
@@ -80,6 +86,5 @@ public class MainActivity extends AppCompatActivity  {
 
         return true;
     }
-
 
 }
