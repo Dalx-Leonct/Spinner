@@ -7,4 +7,6 @@
     android:padding="10sp"
     android:textColor="#000000"
     android:background="#00BCD4"
+    android:layout_marginStart="20dp"
+
     xmlns:android="http://schemas.android.com/apk/res/android" />
