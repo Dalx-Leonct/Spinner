@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Spinner</string>
+
+
+    <!-- String para calculadora -->
+
+    <string name="Calcular">Calcular</string>
+    <string name="Numero1">Numero1</string>
+    <string name="Numero2">Numero2</string>
+    <string name="Respuesta">Respuesta</string>
+</resources>
